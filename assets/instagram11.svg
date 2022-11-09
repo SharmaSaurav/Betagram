@@ -1,0 +1,42 @@
+<svg width="378.08" height="120.8" xmlns="http://www.w3.org/2000/svg" viewBox="60.96 14.6 378.08 120.8" style="background:0 0" preserveAspectRatio="xMidYMid">
+    <defs>
+        <linearGradient id="editing-shiny-gradient" x1=".043" x2=".957" y1=".297" y2=".703" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffb200"/>
+            <stop offset=".5" stop-color="#e10057"/>
+            <stop offset="1" stop-color="#5A1A80"/>
+        </linearGradient>
+        <linearGradient id="editing-shiny-gradient2" x1="0" x2="0" y1="0" y2="1">
+            <stop offset=".2" stop-color="#fff" stop-opacity=".8"/>
+            <stop offset=".8" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="editing-shiny2" x="-100%" y="-100%" width="300%" height="300%">
+            <feMorphology radius="2"/>
+        </filter>
+        <filter id="editing-shiny" x="-100%" y="-100%" width="300%" height="300%">
+            <feFlood flood-color="#fff" result="flood"/>
+            <feConvolveMatrix in="SourceGraphic" result="conv" order="8,8" divisor="1" kernelMatrix="0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 0"/>
+            <feOffset dy="4" in="conv" result="offset"/>
+            <feComposite operator="in" in="flood" in2="offset" result="comp"/>
+            <feGaussianBlur in="offset" stdDeviation="3" result="shadow"/>
+            <feColorMatrix in="shadow" values="0.7 0 0 0 0 0 0.7 0 0 0 0 0 0.7 0 0 0 0 0 0.3 0" result="dark-shadow"/>
+            <feOffset dy="4" in="dark-shadow" result="offset-shadow"/>
+            <feOffset dy="2" in="conv" result="offset-2"/>
+            <feComposite operator="out" in="offset" in2="offset-2" result="edge-diff"/>
+            <feGaussianBlur in="edge-diff" stdDeviation="1" result="edge-blur"/>
+            <feColorMatrix in="edge-blur" result="edge-shadow" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+            <feComposite operator="in" in="edge-shadow" in2="offset" result="edge-shadow-in"/>
+            <feOffset dy="1" in="edge-shadow-in" result="edge-shadow-final"/>
+            <feMerge result="out">
+                <feMergeNode in="offset-shadow"/>
+                <feMergeNode in="comp"/>
+                <feMergeNode in="edge-shadow-final"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g filter="url(#editing-shiny)"/>
+    <g filter="url(#editing-shiny2)"/>
+    <style>
+        
+    </style>
+</svg>

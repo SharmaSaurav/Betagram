@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "372234750025",
+    "project_id": "betagram-7ca01",
+    "storage_bucket": "betagram-7ca01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372234750025:android:2435e84fa14274eb1e5798",
+        "android_client_info": {
+          "package_name": "com.example.betagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372234750025-2ikgul9llaritmn5jcha4sguscafd5bp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxqnnOIaZAW0hWBMEexahVUQTg_NvvVos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372234750025-2ikgul9llaritmn5jcha4sguscafd5bp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "372234750025-ojb3i31la91bi7h9jd8afr1nkf5br5ok.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.betagram"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
